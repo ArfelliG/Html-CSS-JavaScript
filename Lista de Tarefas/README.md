@@ -1,0 +1,3 @@
+LISTA DE TAREFAS
+
+Aplicação web de gerenciamento de tarefas desenvolvida com HTML, CSS e JavaScript, permitindo adicionar, concluir, filtrar e remover tarefas por meio de uma interface moderna, intuitiva e responsiva.
