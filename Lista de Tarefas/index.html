@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Lista de Tarefas</h1>
+    <p class="subtitulo">Organize o que você precisa fazer hoje.</p>
 
+    <form id="form-tarefa" class="form">
+      <input type="text" id="input-tarefa" placeholder="Digite uma nova tarefa..." maxlength="80" autocomplete="off" required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filtros">
+      <button class="filtro ativo" data-filtro="todas">Todas</button>
+      <button class="filtro" data-filtro="pendentes">Pendentes</button>
+      <button class="filtro" data-filtro="concluidas">Concluídas</button>
+    </div>
+
+    <ul id="lista" class="lista"></ul>
+
+    <p id="vazio" class="vazio" hidden>Nenhuma tarefa por aqui.</p>
+
+    <footer class="rodape">
+      <span id="contador">0 tarefas pendentes</span>
+      <button id="limpar" class="limpar">Limpar concluídas</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
